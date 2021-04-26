@@ -1,7 +1,7 @@
-// function Song() {
-// }
+'use strict';
 
-// Song.prototype.persistFavoriteStatus = function(value) {
-//   // something complicated
-//   throw new Error("not yet implemented");
-// };
+class Counter{
+	constructor() {
+		this.number = 0;
+	}
+}

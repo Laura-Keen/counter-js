@@ -1,15 +1,14 @@
-// beforeEach(function () {
-//   jasmine.addMatchers({
-//     toBePlaying: function () {
-//       return {
-//         compare: function (actual, expected) {
-//           var player = actual;
+'use strict';
 
-//           return {
-//             pass: player.currentlyPlayingSong === expected && player.isPlaying
-//           };
-//         }
-//       };
-//     }
-//   });
-// });
+describe('Counter', () => {
+
+	let counter;
+
+	beforeEach(() => {
+		counter = new Counter();
+	});
+
+	it('starts at 0', () => {
+		expect(counter.number).toEqual(0);
+	});
+});
